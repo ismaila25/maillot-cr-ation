@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Détail Produit - Maillots Création</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="products.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Maillots Création</h1>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/products.html">Nos Maillots</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="breadcrumb">
+        <div class="container">
+          <a href="index.html">Accueil</a> &gt;
+          <a href="products.html">Nos Maillots</a> &gt;
+          <span>Barcelona Maillot Domicile 2024/2025</span>
+        </div>
+      </div>
+
+      <section class="product-detail">
+        <div class="container">
+          <div class="product-gallery">
+            <div class="main-image">
+              <img
+                src="barca.webp"
+                alt="Barcelona Maillot Domicile 2024/2025"
+                id="mainImage"
+              />
+            </div>
+            <div class="thumbnails">
+              <img
+                src="barca.webp"
+                alt="Vue avant"
+                onclick="changeImage('barca.webp')"
+              />
+              <img
+                src="barca-back.webp"
+                alt="Vue arrière"
+                onclick="changeImage('barca-back.webp')"
+              />
+              <img
+                src="barca-detail.webp"
+                alt="Détail"
+                onclick="changeImage('barca-detail.webp')"
+              />
+            </div>
+          </div>
+
+          <div class="product-info">
+            <div class="product-header">
+              <h1>Barcelona Maillot Domicile 2024/2025</h1>
+              <div class="product-rating">
+                <span class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </span>
+                <span class="rating-count">(78 avis)</span>
+              </div>
+            </div>
+
+            <div class="product-price">
+              <p class="price">7500.00 FCF</p>
+              <p class="availability">
+                <i class="fas fa-check-circle"></i> En stock
+              </p>
+            </div>
+
+            <div class="product-description">
+              <p>
+                Représentez les Blaugranas avec élégance grâce au nouveau
+                maillot domicile du FC Barcelone pour la saison 2024/2025. Le
+                design emblématique aux rayures bleu et grenat combine tradition
+                et innovation avec un tissu léger et respirant pour un confort
+                optimal.
+              </p>
+              <ul class="features">
+                <li><i class="fas fa-tshirt"></i> 100% polyester recyclé</li>
+                <li>
+                  <i class="fas fa-wind"></i> Technologie DriFit pour une
+                  meilleure respirabilité
+                </li>
+                <li><i class="fas fa-shield-alt"></i> Logo brodé</li>
+                <li><i class="fas fa-recycle"></i> Éco-responsable</li>
+              </ul>
+            </div>
+
+            <div class="product-config">
+              <div class="size-selector">
+                <label for="size">Taille:</label>
+                <div class="size-options">
+                  <button>XS</button>
+                  <button>S</button>
+                  <button class="selected">M</button>
+                  <button>L</button>
+                  <button>XL</button>
+                  <button>XXL</button>
+                </div>
+              </div>
+
+              <div class="customization">
+                <label for="name">Personnalisation:</label>
+                <div class="custom-fields">
+                  <div class="field">
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="Nom (optionnel)"
+                    />
+                  </div>
+                  <div class="field">
+                    <input
+                      type="number"
+                      id="number"
+                      placeholder="Numéro (optionnel)"
+                      min="1"
+                      max="99"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="quantity">
+                <label>Quantité:</label>
+                <div class="quantity-selector">
+                  <button class="quantity-btn" onclick="decrementQuantity()">
+                    -
+                  </button>
+                  <input
+                    type="number"
+                    id="quantity"
+                    value="1"
+                    min="1"
+                    max="10"
+                  />
+                  <button class="quantity-btn" onclick="incrementQuantity()">
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-actions">
+              <button class="add-to-cart-btn">
+                <i class="fas fa-shopping-cart"></i> Ajouter au panier
+              </button>
+              <button class="buy-now-btn">
+                <i class="fas fa-bolt"></i> Acheter maintenant
+              </button>
+              <button class="wishlist-btn">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+
+            <div class="product-meta">
+              <div class="shipping">
+                <i class="fas fa-truck"></i> Livraison gratuite à partir de
+                25000 FCF
+              </div>
+              <div class="returns">
+                <i class="fas fa-exchange-alt"></i> Retours gratuits sous 30
+                jours
+              </div>
+              <div class="payment">
+                <i class="fas fa-lock"></i> Paiement sécurisé
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="information">
+        <div class="maillot">
+          <h3>MAILLOTS CLUB</h3>
+          <ul>
+            PSG
+          </ul>
+          <ul>
+            Barcelona
+          </ul>
+          <ul>
+            Real Madrid
+          </ul>
+          <ul>
+            Liverpool
+          </ul>
+          <ul>
+            Arsenal
+          </ul>
+          <ul>
+            Marseille
+          </ul>
+          <ul>
+            Manchester United
+          </ul>
+          <ul>
+            Athletico Madrid
+          </ul>
+          <ul>
+            Chelsea
+          </ul>
+        </div>
+
+        <div class="maillot">
+          <h3>MAILLOTS NATIONS</h3>
+          <ul>
+            Sénégal
+          </ul>
+          <ul>
+            France
+          </ul>
+          <ul>
+            Bresil
+          </ul>
+          <ul>
+            Argentine
+          </ul>
+          <ul>
+            Maroc
+          </ul>
+          <ul>
+            Portugal
+          </ul>
+          <ul>
+            Suisse
+          </ul>
+        </div>
+
+        <div class="maillot">
+          <h3>INFORMATIONS</h3>
+          <ul>
+            FAQ
+          </ul>
+          <ul>
+            Flocages
+          </ul>
+          <ul>
+            Magasin
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="titre">Maillot Création</h4>
+          <ul>
+            Mentions légales
+          </ul>
+          <ul>
+            Paiement sécurisé
+          </ul>
+          <ul>
+            Livraison gratuit et rapide
+          </ul>
+          <ul>
+            Retours
+          </ul>
+        </div>
+
+        <div>
+          <h3>MAILLOTS JOUEURS</h3>
+          <ul>
+            Messi
+          </ul>
+          <ul>
+            Lamine Yamal
+          </ul>
+          <ul>
+            Ronaldo
+          </ul>
+          <ul>
+            Mbappe
+          </ul>
+          <ul>
+            Bellingham
+          </ul>
+        </div>
+
+        <div>
+          <h4>Suivez-nous</h4>
+          <img class="logo" src="téléchargement (1).jpg" alt="instragram" />
+          <img class="logo" src="téléchargement.png" alt="facebook" />
+          <img class="logo" src="téléchargement (1).png" alt="tiktok" />
+        </div>
+      </section>
+      <p>&copy; 2025 Maillot Création - Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>

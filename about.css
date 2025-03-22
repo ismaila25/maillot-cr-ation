@@ -1,0 +1,42 @@
+.About {
+    margin: 0 auto;
+    align-items: center;
+    width: 585px; 
+}
+
+.About p span {
+    color: rgb(71, 71, 233);
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.information {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 1000px;
+    margin-left: 100px;
+    gap: 50px;
+    padding: 30px;
+    
+}
+
+.logo {
+    width: 20px;
+}
+
+.titre {
+    border-color: aqua;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+
+.footer {
+    background-color: #c9b5b5;
+    padding: 10px;
+}
+
+.pied {
+    justify-items: flex-end;
+}

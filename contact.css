@@ -1,0 +1,228 @@
+/* STYLES POUR LA PAGE CONTACT */
+
+/* Utilisation des variables de couleur du site principal */
+:root {
+  --primary-color: #ffc107;
+  --secondary-color: #f4f4f4;
+  --dark-color: #333;
+  --light-color: #fff;
+  --accent-color: #ffc107;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+/* Bannière de page */
+.page-banner {
+  height: 40vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.4)),
+    url("téléchargement.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--light-color);
+  margin-top: 0; /* Suppression de la marge qui créait un espace après le header */
+}
+
+.page-banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.page-banner p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Section contact */
+.contact-section {
+  padding: 3rem 1rem;
+  background-color: var(--secondary-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.contact-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.contact-info,
+.contact-form-container {
+  flex: 1;
+}
+
+.contact-info {
+  background-color: var(--light-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.info-item {
+  display: flex;
+  margin-bottom: 1.5rem;
+  align-items: flex-start;
+}
+
+.info-icon {
+  margin-right: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(
+    0,
+    102,
+    204,
+    0.1
+  ); /* Utilise la couleur primaire avec transparence */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.info-item h4 {
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+
+.social-links h4 {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: var(--dark-color);
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+
+.social-icons a:hover {
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+/* Formulaire de contact */
+.contact-form-container {
+  background-color: var(--light-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.contact-form-container h2,
+.contact-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.form-check input {
+  margin-right: 10px;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #0052a3;
+  transform: scale(1.05);
+}
+
+/* Media queries pour la page contact */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form-container {
+    width: 100%;
+  }
+
+  .page-banner h1 {
+    font-size: 1.8rem;
+  }
+
+  .page-banner p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-banner {
+    height: 30vh;
+  }
+
+  .contact-section {
+    padding: 2rem 1rem;
+  }
+
+  .info-item {
+    flex-direction: column;
+  }
+
+  .info-icon {
+    margin-bottom: 10px;
+  }
+}
